@@ -1,0 +1,34 @@
+<script>
+    function escrever(mensagem){
+        document.write(mensagem + "<br>")
+    }
+
+    function escreverTabuada(multiplicador, mensagem, interator){
+        escrever(multiplicador + mensagem + (multiplicador * interator))
+
+        if(interator < 10){
+            novo_interator = (interator + 1)
+            escreverTabuada(multiplicador, " X " + novo_interator + " = ", novo_interator)
+        }
+    }
+
+    escrever("Digite" )
+    escrever("1 - Tabuada do 1" )
+    escrever("2 - Tabuada do 2" )
+    escrever("3 - Tabuada do 3" )
+    escrever("4 - Tabuada do 4" )
+    escrever("5 - Tabuada do 5" )
+    escrever("6 - Tabuada do 6" )
+    escrever("7 - Tabuada do 7" )
+    escrever("8 - Tabuada do 8" )
+    escrever("9 - Tabuada do 9" )
+    escrever("10 - Tabuada do 10 <br>" )
+    a = prompt()
+
+    if(a == 1 || a == 2 || a == 3 || a == 4 || a == 5 || a == 6 || a == 7 || a == 8 || a == 9 || a == 10){
+        escreverTabuada(a, " X 1 = ", 1)
+    }
+    else{
+        escrever("Opção Invalida")
+    }
+</script>

@@ -1,0 +1,40 @@
+<div id="resultado"></div>
+
+<script src="file:///C:/Users/jean-/Desktop/Treinamento/Orientação%20a%20Objetos/Construtores/Cliente.js"></script>
+
+<script>
+/*
+var c = new Cliente();
+c.nome = "Jean";
+c.telefone = "(13)99786-7492";
+c.cpf = "452.987.978-06";
+c.GravarEmMemoria()
+//c.Mostrar();
+*/
+var c = new Cliente({nome: "Jean", telefone:"(13)99786-7492", cpf:"452.987.978-06" });
+c.GravarEmMemoria()
+
+//document.write("<hr>");
+/*
+var c2 = new Cliente();
+c2.nome = "Jéssica";
+c2.telefone = "(11)95377-6197";
+c2.cpf = "405.201.228-36";
+c2.GravarEmMemoria()
+//c2.Mostrar();
+*/
+
+var c2 = new Cliente({nome:"Jéssica", telefone:"(11)95377-6197", cpf:"405.201.228-36" });
+c2.GravarEmMemoria()
+
+var c3 = new Cliente({nome:"Matheus" });
+c3.GravarEmMemoria()
+
+var c3 = new Cliente({nome:"Nicolas" });
+c3.GravarEmMemoria()
+
+Cliente.todos()
+
+</script>
+
+<h1>Programa em JS Orientado a Objetos</h1>

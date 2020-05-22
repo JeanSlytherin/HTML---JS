@@ -1,0 +1,16 @@
+<script>
+    var GlobalIndex = 0;
+
+    function EscreverNaTela(mensagem){
+        document.write(mensagem + "<br>")
+
+        GlobalIndex += 1;
+
+        if(GlobalIndex < 10){
+            EscreverNaTela(mensagem)
+        }
+    }
+
+    EscreverNaTela("Salveeeeee");
+
+</script>

@@ -1,0 +1,39 @@
+<script src="file:///C:/Users/jean-/Desktop/Treinamento/Orienta%C3%A7%C3%A3o%20a%20Objetos/Polimorfismo/Pessoa.js"></script>
+<script src="file:///C:/Users/jean-/Desktop/Treinamento/Orienta%C3%A7%C3%A3o%20a%20Objetos/Polimorfismo/Fornecedor.js"></script>
+<script src="file:///C:/Users/jean-/Desktop/Treinamento/Orienta%C3%A7%C3%A3o%20a%20Objetos/Polimorfismo/Cliente.js"></script>
+
+<script>
+
+var p = new Pessoa();
+p.nome = "pessoa";
+p.telefone = "(13)99786-7492";
+p.cpf = "452.987.978-06"
+p.GravarEmMemoria();
+console.log(Pessoa.Base);
+
+var f = new Fornecedor();
+f.nome = "Fornecedor";
+f.telefone = "(13)99786-7492";
+f.cpf = "452.987.978-06"
+f.GravarEmMemoria();
+console.log(Fornecedor.Base);
+
+var c = new Cliente();
+c.nome = "Cliente";
+c.telefone = "(13)99786-7492";
+c.cpf = "452.987.978-06"
+c.GravarEmMemoria();
+console.log(Cliente.Base);
+
+console.log("======= Método da Instância P =======")
+p.Original();
+console.log("=====================================")
+
+console.log("======= Método da Instância C =======")
+c.Original();
+console.log("=====================================")
+
+
+</script>
+
+<h1>Programa em JS Orientado a Objetos</h1>

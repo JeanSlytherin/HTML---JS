@@ -1,0 +1,35 @@
+enquanto = while
+para = for
+e = &&
+ou ||
+
+==========Algoritomo==========
+
+a = 1
+enquanto(a < 3) inicio
+	mostre9(a)
+	a = a + 1
+fim
+
+a = 1
+para(a=1 até 3 a=a+1) inicio
+	mostre(a)
+fim
+
+==========JavaScript==========
+debugger
+a=1
+while((a<3) || (a==3)){
+	alert(a)
+	a = a + 1
+}
+
+debugger
+for(a=1; a<3; a=a+1){
+	alert(a)
+}
+
+debugger
+for(a=1; ((a<3)||(a==3)); a=a+1){
+	alert(a)
+}

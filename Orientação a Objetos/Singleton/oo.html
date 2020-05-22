@@ -1,0 +1,22 @@
+<script src="file:///C:/Users/jean-/Desktop/Treinamento/Orienta%C3%A7%C3%A3o%20a%20Objetos/Singleton/classe_singleton.js">
+</script>
+
+<script>
+
+console.log(Singleton);
+console.log("===== Sem Instancia Iniciada =====");
+console.log(Singleton.instancia);
+Singleton.iniciar();
+console.log("===== Com Instancia Iniciada =====");
+console.log(Singleton.instancia);
+
+console.log("===== Alterando Atributo nome =====")
+Singleton.instancia.nome = "Jean";
+console.log(Singleton.instancia.nome);
+
+console.log("===== Dando o alerta do método unitário da minha classe singleton =====");
+Singleton.instancia.MostrarNaTela();
+
+</script>
+
+<h1>Exemplo de Classe Singleton</h1>
