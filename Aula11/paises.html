@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PAISES</title>
+    <style>
+        body{
+            background: rgb(13, 183, 235);
+            font: 200 14pt Comic;
+        } 
+        input{
+            width: 110px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistemas de Paises</h1>
+    Você mora onde? <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res"></div>
+    <script>
+        function calcular(){
+            var textp = document.getElementById('txtpais').value
+            var res = document.getElementById('res')
+            res.innerHTML = `<p>Seu País atual é o <strong>${textp}</strong></p>`
+            if (textp == 'Brasil'){
+                res.innerHTML += `<p>Se você mora no<strong> ${textp}</strong> é Brasileiro!</p>`
+            } else {
+                res.innerHTML += `<p><strong>Estrangeiro</strong></p>`
+            }
+            res.innerHTML += `<p>Seja Bem-Vindo ao <strong>${textp}</strong></p>`
+        }    
+    </script>
+</body>
+</html>
